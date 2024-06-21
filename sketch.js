@@ -13,21 +13,21 @@ function setup() {
     h = 0;
     m = 0;
 
-    frameRate(20);
+    frameRate(60);
 }
 
 function draw() {
     background(ceu);
     
-    m++;
-    if (m === 60) {
-        h++;
-        h === 24 ? h = 0 : h = h;
-        m = 0;
-    } 
+    // m++;
+    // if (m === 60) {
+    //     h++;
+    //     h === 24 ? h = 0 : h = h;
+    //     m = 0;
+    // } 
 
-    // h = hour();
-    // m = minute();
+    h = hour();
+    m = minute();
     
     angulo = 360 / 24 * h - 90;
     angulo += 360 / 24 / 60 * m;
